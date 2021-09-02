@@ -74,7 +74,7 @@ object}
 
 \item{FDRthreshold}{A numeric value}
 
-\item{Methylthreshold}{A numeric value}
+\item{Methylthreshold}{A positive numeric value; the default is 0.001}
 
 \item{weightfunction}{A function to create weights using variance obtained
 form the MCMC algorithm}
@@ -105,6 +105,9 @@ plot.}
 
 \item{annotateTop}{If TRUE, only annotates the top hit on each chromosome
 that is below the annotatePval threshold.}
+
+\item{windowsize}{An integer value for partitioning data into windows of size
+windowsize.}
 }
 \description{
 parameters name and their descriptions
